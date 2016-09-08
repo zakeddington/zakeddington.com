@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Zak Eddington | Design & Front-End Development</title>
+<link rel="Shortcut Icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/global.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Gotham_Medium_Bold_500-Gotham_Medium_Bold_700.font.js"></script>
+<script type="text/javascript">
+Cufon.set('fontFamily', 'Gotham Medium Bold');
+Cufon.replace('ul#nav', { hover: true });
+Cufon.replace('h1');
+Cufon.replace('h2');
+Cufon.replace('h3');
+</script>
+
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="js/submitform.js"></script>
+
+</head>
+
+<body>
+
+<div id="header">
+  
+  <h1><a href="/">Zak Eddington</a></h1>
+  <h2>Design &amp; Front-End Development</h2>
+  <ul id="nav">
+    <li><a href="/">Work</a></li>
+    <li><a href="contact.htm">Contact</a></li>
+  </ul>
+   
+</div><!-- /#header -->
+
+
+
+<div id="content">  
+  
+  <h2>About Zak</h2>
+  
+  <div class="box">
+    
+    <div class="box-left">
+      <h3>Hello.</h3>
+      <p>As I’m sure you’ve guessed, I’m a designer and front-end developer. I live in beautiful Seattle, Washington where a sunny day isn’t as rare as you might think. Designing and building websites tailored specifically to clients’ needs is what I like to do, and I’m quite good at it. I can design the concept, write code clean as a whistle and build out the entire site. I’ve done it more times that I can remember. I’m a bit of a hybrid developer because I enjoy the creative, graphical side of web design just as much as the nuts and bolts, code-writing side.</p>
+      
+      <p>I'm always learning new things, but here's what I can do right now.</p>
+      <p style="width:50%; float:left;">HTML/CSS<br />ASP/PHP<br />jQuery/Javascript<br />Content Management<br />Wordpress</p>
+      <p style="width:50%; float:left;">Photoshop<br />Illustrator<br />Dreamweaver<br />Flash</p>
+      
+    </div><!-- /.box-left -->
+    
+    <div class="box-right">
+      <h3>Get in Touch.</h3>
+      <p><b>Email.</b> <a href="mailto:zakeddington@gmail.com">zakeddington@gmail.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Tel.</b> 206.979.7116<br />I am currently <b>unavailable</b> for work.</p>
+      <hr />
+     
+      <form action="/webformmailer.php" method="post" id="sendEmail">
+	    <p>* All fields are required</p>
+	    <fieldset>
+          <label for="name">Name:</label><input type="text" name="name" id="name" value="" />
+        </fieldset>
+        <fieldset>
+          <label for="emailFrom">Email:</label><input type="text" name="emailFrom" id="emailFrom" value="" />
+        </fieldset>
+        <fieldset>
+          <label for="message">Message:</label><textarea name="message" id="message" rows="5"></textarea>
+        </fieldset>
+        <fieldset>
+          <label>&nbsp;</label><input type="submit" value="Submit" id="submit" /><input type="hidden" name="submitted" id="submitted" value="true" /><div class="loading"></div>
+        </fieldset>
+	  </form>
+    </div><!-- /.box-right -->
+  
+  </div><!-- /.box -->
+
+<div class="clear">&nbsp;</div>    
+</div><!-- /#content -->
+
+</body>
+</html>

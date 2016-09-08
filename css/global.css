@@ -1,0 +1,305 @@
+/* -------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------ reset ------------------------------------------*/
+/* -------------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+}
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	border:inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+}
+:focus {
+	outline: 0;
+}
+
+
+/* -------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------ default ----------------------------------------*/
+/* -------------------------------------------------------------------------------------------------*/
+html, body {
+	margin: 0 auto;
+	padding: 0;
+	height:100%;
+	background:#b0e1fd;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	min-width:960px;
+	color:#666;
+	font-size:14px;
+	line-height:20px;
+}
+
+a {			color:#559dc6; text-decoration:none; }
+a:hover {	color:#559dc6; text-decoration:underline; }
+
+strong, b { font-weight:bold; }
+i, em { font-style:italic;}
+
+
+.clear {	clear:both !important;	font-size:0; height:0; overflow:hidden; }
+
+
+/* this makes anything with the attribute of type="hidden" to actually be hidden. ff was not behaving properly. */
+[type="hidden"] {
+	display:none !important;
+	visibility:hidden !important;
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------ general layout divs ----------------------------*/
+/* -------------------------------------------------------------------------------------------------*/
+#header {
+	position:relative;
+	margin:20px auto;
+	padding:0;
+	width:940px;
+	height:120px;
+	background:url(../images/header2.png) 0 0 no-repeat;
+}
+
+#content {
+	width:940px;
+	margin:0 auto;
+	padding:0;
+	overflow:hidden;
+}
+
+/* -------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------ header -----------------------------------------*/
+/* -------------------------------------------------------------------------------------------------*/
+
+/* ------------------- logo ------------------- */
+#header h1 {
+	position:absolute;
+	top:10px;
+	left:0;
+	margin:0;
+	padding:0;
+	font-size:48px;
+	line-height:50px;
+	height:50px;
+	margin-bottom:10px;
+	font-weight:normal;
+	color:#fefe7f;
+	text-transform:uppercase;	
+}
+#header h1 a { color:#fefe7f; text-decoration:none; }
+
+/* ------------------- tagline ------------------- */
+#header h2 {
+	position:absolute;
+	top:70px;
+	left:0;
+	margin:0;
+	padding:0;
+	font-size:24px;
+	line-height:30px;
+	height:30px;
+	color:#ffe;
+	border:none;
+}
+#header h2 a { color:#fefe7f; }
+
+/* ----------------- nav ----------------- */ 
+ul#nav {
+	position:absolute;
+	top:35px;
+	right:140px;
+	font-size:14px;
+	line-height:20px;
+	height:20px;
+	list-style:none;
+	display:inline;
+	text-align:right;
+	text-transform:uppercase;
+}
+ul#nav li { 
+	display:inline;
+	font-size:14px;
+	line-height:20px;
+	height:20px;
+	padding:0 0 0 10px;
+}
+ul#nav li a { text-decoration:none; }
+ul#nav li a:hover { color:#fefe7f; }
+
+
+
+/* -------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------ general page styles ----------------------------*/
+/* -------------------------------------------------------------------------------------------------*/
+
+h2 {
+	font-size:36px;
+	line-height:40px;
+	padding-bottom:5px;
+	margin-bottom:15px;
+	color:#559dc6;
+	font-weight:normal;
+	text-transform:uppercase;
+	border-bottom:2px solid #ffe;
+}
+
+h3 {
+	font-size:18px;
+	line-height:20px;
+	margin-bottom:10px;
+	color:#559dc6;
+	font-weight:normal;
+}
+h3 a { color:#069; }
+
+hr {
+	color:#ccc;
+	background:#ccc;
+	border:0;
+	height:1px;
+}
+
+p,
+ul,
+ol { 
+    margin-bottom: 20px; 
+}
+
+ol, ul {
+    list-style:outside;
+    margin-left: 2em;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------ portfolio boxes --------------------------------*/
+/* -------------------------------------------------------------------------------------------------*/
+
+.box {
+	position:relative;
+	width:900px;
+	height:380px;
+	margin:0 0 20px;
+	padding:20px;
+	background:#ffe;
+}
+.box-left {
+	float:left;
+	display:inline;
+	width:48%;
+}
+.box-right {
+	float:right;
+	display:inline;
+	width:48%;
+}
+
+
+.photos {
+	position:absolute;
+	top:20px;
+	left:20px;
+	width:620px;
+	height:340px;
+	overflow:hidden;
+}
+.slide-buttons { 
+	position:absolute;
+	top:380px;
+	left:20px;
+	width:620px;
+	overflow:hidden;
+}
+.slide-buttons a { 
+	float:left;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	margin-right:10px;
+	text-align:center;
+	font-size:11px;
+	color:#ffe;
+	text-decoration:none;
+	background:url(../images/slide-buttons.png) 0 0 no-repeat;
+}
+.slide-buttons a.activeSlide { background-position:0 -40px; }
+
+
+.text {
+	position:absolute;
+	top:20px;
+	right:20px;
+	width:260px;
+	overflow:hidden;
+}
+.text ul { margin-left:0; }
+.text ul li {
+	list-style:none;
+	padding:0 0 5px 25px;
+	background:url(../images/check.png) 0 0 no-repeat;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------ contact form -----------------------------------*/
+/* -------------------------------------------------------------------------------------------------*/
+form {
+	float:right;
+	display:inline-block;
+	width:100%;
+}
+form p { color:#559dc6; font-size:12px; text-align:right; }
+fieldset { margin-bottom:5px; }
+label {
+	float:left;
+	display:inline-block;
+	width:40%;
+	text-align:right;
+	margin-right:2%;
+}
+input, textarea {
+	padding:3px;
+	font-size:1em;
+	color:#666;
+	border:1px solid #bdbdbd;
+	background:#fff;
+	overflow:visible;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+input#submit {
+	color:#fff !important;
+	background:#559dc6;
+	width:auto !important;
+	padding:3px 10px !important;
+	cursor:pointer;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border:none;
+}
+
+.error {
+	display:inline;
+	padding-left:10px;
+	color:#e51905;
+}
